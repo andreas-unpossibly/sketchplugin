@@ -1,0 +1,26 @@
+{
+  "name": "Dre's Sketch PNG Compressor",
+  "description": "Makes your PNG's small n stuff",
+  "author": "Dre",
+  "authorEmail": "andreas@unpossib.ly",
+  "version": "1.0",
+  "identifier": "com.sketchapp.plugins.image-compressor",
+  "homepage": "http://unpossib.ly",
+  "compatibleVersion": 3.8,
+  "commands": [
+    {
+      "identifier": "imageCompress",
+      "handler": "___imageCompress_run_handler_",
+      "script": "plugin.js",
+      "name": "Export All Assets",
+      "handlers": {
+        "run": "___imageCompress_run_handler_",
+        "actions": {
+          "ExportSlices": "___imageCompress_run_handler_",
+          "Export": "___imageCompress_run_handler_"
+        }
+      }
+    }
+  ],
+  "disableCocoaScriptPreprocessor": true
+}
